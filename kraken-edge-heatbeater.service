@@ -1,0 +1,18 @@
+[Unit]
+Description=KrakenEdgeHeatbeater
+After=syslog.target network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/pi/kraken-edge-heartbeater/
+ExecStart=/home/pi/kraken-edge-heartbeater/kraken-edge-heartbeater
+TimeoutStopSec=5
+KillMode=process
+Restart=always
+User=root
+Group=root
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy = multi-user.target

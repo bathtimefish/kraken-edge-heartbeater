@@ -1,0 +1,21 @@
+[package]
+name = "kraken-edge-heartbeater"
+version = "0.1.0"
+authors = ["bathtimefish <muraoka@bathtimefish.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+# See the doc for profiles at https://doc.rust-lang.org/cargo/reference/profiles.html
+[profile.dev]
+opt-level = 0
+debug = true
+
+[profile.release]
+opt-level = 3
+debug = false 
+
+[dependencies]
+paho-mqtt = "0.9"
+yaml-rust = "0.4"
+chrono = "0.4.19"
