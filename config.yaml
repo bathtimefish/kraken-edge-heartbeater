@@ -2,5 +2,5 @@ mqtt:
   host: "tcp://localhost:1883"
   topic: "krakeniot"
 client:
-  id: "kraken_edge_heartbeater"
+  id: "kraken-edge-heartbeater"
   interval: 5000
