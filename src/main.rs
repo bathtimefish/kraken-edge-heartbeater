@@ -12,7 +12,7 @@ use chrono::{DateTime, Local};
 
 const QOS:i32 = 1;
 const EVENT_TYPE: &str = "__KRKN_HEATBEAT__";
-const DFLT_CONFIG_PATH: &str = "config.yaml";
+const DFLT_CONFIG_PATH: &str = "config.yml";
 const DFLT_CLIENT_ID: &str = "kraken-edge-heartbeater";
 const DFLT_TOPIC: &str = "krakeniot";
 
